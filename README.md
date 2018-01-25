@@ -1,4 +1,5 @@
 # FANDOM University VR
+https://cschucode.github.io/fandom-university-vr/
 
 A project that combines all of the FANDOM University goodness and the A-Frame virtual reality library to create and immersive and interactive experience.
 
