@@ -13,12 +13,15 @@
 
       <!-- asset management system -->
       <a-assets>
-        <img id="city" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
-        <video id="videoParis" preload="auto" src="https://ucarecdn.com/4130c599-445f-4e76-9052-49978e972641/" width="160" height="90" autoplay="" loop="true" crossorigin="anonymous" playsinline="" webkit-playsinline=""></video>  
+        <img id="city" crossorigin="anonymous" src="//i.imgur.com/lzzp8gN.png">
+        <video id="videoParis" preload="auto" src="https://ucarecdn.com/4130c599-445f-4e76-9052-49978e972641/" width="160" height="90" autoplay="" loop="true" crossorigin="anonymous" playsinline="" webkit-playsinline=""></video>
+        <!-- <video id="sample" preload="auto" src="assets/sample.mp4" width="160" height="90" autoplay="" loop="true" crossorigin="anonymous" playsinline="" webkit-playsinline=""></video> -->
       </a-assets>
 
       <a-scene>
-        <a-plane src="#videoParis" position="0 2 -8" width="3" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane src="#videoParis" position="-3.7 -1.7 -8.5" rotation="0 15 0" width="1.5" height="1" color="#7BC8A4" shadow></a-plane>
+        <a-plane src="#videoParis" position="0 2 -8" rotation="0 0 0" width="3" height="2" color="#7BC8A4" shadow></a-plane>
+        <a-plane src="#videoParis" position="4.5 -2 -6.5" rotation="0 -60 0" width="1.5" height="1" color="#7BC8A4" shadow></a-plane>
         <a-sky id="image-360" radius="10" src="#city"></a-sky>
       </a-scene>
 
