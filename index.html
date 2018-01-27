@@ -13,17 +13,24 @@
 
       <!-- asset management system -->
       <a-assets>
-        <img id="city" crossorigin="anonymous" width="2048px" height="1024px" src="https://c1.staticflickr.com/5/4568/25139845398_72f0d309dc_k.jpg">
+        <!-- images-->
+        <img id="mission-control" crossorigin="anonymous" width="2048px" height="1024px" src="https://c1.staticflickr.com/5/4568/25139845398_72f0d309dc_k.jpg">
         <img id="fandom-u" crossorigin="anonymous" width="2048px" height="1024px" src="https://vignette.wikia.nocookie.net/central/images/3/33/Fandom-University-Header-Logo.png/revision/latest/scale-to-width-down/670?cb=20170821172303">
+        <!-- videos -->
         <video id="videoParis" preload="auto" src="https://ucarecdn.com/4130c599-445f-4e76-9052-49978e972641/" width="160" height="90" autoplay="" loop="true" crossorigin="anonymous" playsinline="" webkit-playsinline=""></video>
-        <!-- <video id="sample" preload="auto" src="assets/sample.mp4" width="160" height="90" autoplay="" loop="true" crossorigin="anonymous" playsinline="" webkit-playsinline=""></video> -->
+        <video id="fandom-account" preload="auto" src="https://content.jwplatform.com/players/aSt7ckzR-VXc5h4Tf.html" width="160" height="90" autoplay="" loop="true" crossorigin="anonymous" playsinline="" webkit-playsinline=""></video>
       </a-assets>
 
       <a-scene>
-        <a-plane src="#videoParis" position="-3.7 -1.7 -8.5" rotation="0 15 0" width="1.5" height="1" color="#7BC8A4" shadow></a-plane>
-        <a-plane src="#fandom-u" position="-1 1.5 -8" rotation="0 0 0" width="3.4" height="1.5" color="#7BC8A4" scale="1.5 1.8 0" shadow></a-plane>
-        <a-plane src="#videoParis" position="4.5 -2 -6.5" rotation="0 -60 0" width="1.5" height="1" color="#7BC8A4" shadow></a-plane>
-        <a-sky id="image-360" radius="10" src="#city"></a-sky>
+        <!-- images-->
+        <a-plane src="#fandom-u" position="-.8 1.6 -8.8" rotation="0 0 0" scale="1.5 1.8 0"width="3.4" height="1.5" color="#7BC8A4" shadow></a-plane>
+
+        <!-- videos -->
+        <a-plane src="#videoParis" position="-6 1.5 -6.5" rotation="0 75 0" scale="2 2 1" width="1.5" height="1" color="#7BC8A4" shadow></a-plane>
+        <a-plane src="#videoParis" position="6.5 1.8 -6" rotation="0 -75 6" scale="1.5 1.5 2 " width="1.5" height="1" color="#7BC8A4" shadow></a-plane>
+
+        <!-- background -->
+        <a-sky id="image-360" radius="10" src="#mission-control"></a-sky>
       </a-scene>
 
 
